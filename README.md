@@ -1,2 +1,2 @@
 # about-me
-wqeek 1 about me project for code 201
+Week 1 about me project for code 201
