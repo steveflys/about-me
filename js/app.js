@@ -1,25 +1,30 @@
 'use strict';
 
-//get the userNameInput    
-alert('Hi! You don\'t know me, but after this we will know a little about each other.  Now let the fun begin!');
-var userNameInput = prompt('My name is Steve, what is your name?');
-console.log('The users name is:' + userNameInput);
-
-alert('Nice to meet you ' + userNameInput + '. Now we\'re going to play a simple yes-no question game so you can learn a fun fact about me. Please answer the following questions with yes or no only');
-
-//question 1 northPole
+var userNameInput;
 var poleCounter = 0;
 
-var northPole = prompt(userNameInput + ' if I told you I have been to the top of the world, would you believe me?').toLowerCase();
-if(northPole === 'yes') { 
-  alert('You are correct! I went to the North Pole in 1996.');
-  poleCounter ++;
-} else if (northPole === 'no') {
-  alert('Sorry, you\'re wrong.  I went to the North Pole in 1996.');
-} else {
-  alert('I thought we agreed to answer with yes or no only. I\'ll give you this one. The correct answer is yes. I went to the North Pole in 1996. Please answer the rest of the questions with ONLY yes or no. Answers other than yes or no will be considered incorrect');
+function userName() {
+//get the userNameInput
+  alert('Hi! You don\'t know me, but after this we will know a little about each other.  Now let the fun begin!');
+  userNameInput = prompt('My name is Steve, what is your name?');
+  console.log('The users name is:' + userNameInput);
+  alert('Nice to meet you ' + userNameInput + '. Now we\'re going to play a simple yes-no question game so you can learn a fun fact about me. Please answer the following questions with yes or no only');
 }
-console.log('The user knows I\'ve been to the North Pole in 1996');
+
+function northPoleQuestion() {
+//question 1 northPole
+  var northPole = prompt(userNameInput + ' if I told you I have been to the top of the world, would you believe me?').toLowerCase();
+  if(northPole === 'yes') { 
+    alert('You are correct! I went to the North Pole in 1996.');
+    poleCounter ++;
+  } else if (northPole === 'no') {
+    alert('Sorry, you\'re wrong.  I went to the North Pole in 1996.');
+  } else {
+    alert('I thought we agreed to answer with yes or no only. I\'ll give you this one. The correct answer is yes. I went to the North Pole in 1996. Please answer the rest of the questions with ONLY yes or no. Answers other than yes or no will be considered incorrect');
+  }
+  console.log('The user knows I\'ve been to the North Pole in 1996');
+}  
+
 
 //question 2 notCold
 var notCold = prompt('Would you believe I got all the way there without ever getting cold?').toLowerCase();
@@ -130,3 +135,6 @@ else{
   alert(userNameInput + ' now we\'re almost good friends.  Let\'s review how you did on my little quizes.  You got ' + poleCounter + ' of the 5 yes or no answers correct. You couldn\'t guess how many states I lived in with 4 guesses. Finally, you couldn\'t guess one of the countries besides the United States I lived in.  Not bad, considering the quizzes were guessing games.');
 }
 console.Log('The user knows how he did on the quizzes.');
+
+userName();
+northPoleQuestion();
