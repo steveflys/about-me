@@ -17,7 +17,7 @@ if(northPole === 'yes') {
 } else if (northPole === 'no') {
   alert('Sorry, you\'re wrong.  I went to the North Pole in 1996.');
 } else {
-  alert('I thought we agreed to answer with yes or no only. I\'ll give you this one. The correct answer is yes. I went to the North Pole in 1996. Please answer the rest of the questions with ONLY yes or no');
+  alert('I thought we agreed to answer with yes or no only. I\'ll give you this one. The correct answer is yes. I went to the North Pole in 1996. Please answer the rest of the questions with ONLY yes or no. Answers other than yes or no will be considered incorrect');
 }
 console.log('The user knows I\'ve been to the North Pole in 1996');
 
