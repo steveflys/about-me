@@ -25,36 +25,41 @@ function northPoleQuestion() {
   console.log('The user knows I\'ve been to the North Pole in 1996');
 }  
 
-
+function questionNotCold() {
 //question 2 notCold
-var notCold = prompt('Would you believe I got all the way there without ever getting cold?').toLowerCase();
-if (notCold === 'yes') {
-  alert('Right, and I wasn\'t even wearing a coat!');
-  poleCounter ++;        
-} else{
-  alert(userNameInput + ' I wasn\'t lying. I was never too cold, or wearing a coat!');
+  var notCold = prompt('Would you believe I got all the way there without ever getting cold?').toLowerCase();
+  if (notCold === 'yes') {
+    alert('Right, and I wasn\'t even wearing a coat!');
+    poleCounter ++;        
+  } else{
+    alert(userNameInput + ' I wasn\'t lying. I was never too cold, or wearing a coat!');
+  }
+  console.log('The user has knows I stayed warm');
 }
-console.log('The user has knows I stayed warm');
 
+function questionFly() {
 //question 3 fly
-var fly = prompt('If I said I flew over the Polar Ice cap to get there, would you believe that?').toLowerCase();
-if (fly === 'yes') {
-  alert('No I didn\'t fly! I don\'t like planes.');      
-} else{
-  alert('Good answer! I\'m not superman and I don\'t like planes.');
-  poleCounter ++; 
+  var fly = prompt('If I said I flew over the Polar Ice cap to get there, would you believe that?').toLowerCase();
+  if (fly === 'yes') {
+    alert('No I didn\'t fly! I don\'t like planes.');      
+  } else{
+    alert('Good answer! I\'m not superman and I don\'t like planes.');
+    poleCounter ++; 
+  }
+  console.log('The user has knows I did\'t fly');
 }
-console.log('The user has knows I did\'t fly');
 
+function questionTransporter() {
 //question 4 transporter
-var transporter = prompt('Could I have been transported there like Spock or Captian Kirk would have?').toLowerCase();
-if (transporter === 'no') {
-  alert('Yes, transpoters don\'t exist. Star Trek was just a TV show.');
-  poleCounter ++;
-} else {
-  alert('No, I wish we had transporter technology, but Star Trek was just a TV show');
+  var transporter = prompt('Could I have been transported there like Spock or Captian Kirk would have?').toLowerCase();
+  if (transporter === 'no') {
+    alert('Yes, transpoters don\'t exist. Star Trek was just a TV show.');
+    poleCounter ++;
+  } else {
+    alert('No, I wish we had transporter technology, but Star Trek was just a TV show');
+  }
+  console.log('The user understands Star Trek was just a TV show');
 }
-console.log('The user understands Star Trek was just a TV show');
 
 //question 5 submarine
 var submarine = prompt('Well, I didn\'t fly and I wasn\'t magically transported. If I told you I got there by going under the ice in a submarine, would you believe that?').toLowerCase();
@@ -100,7 +105,7 @@ if (counter === 5) {
 console.Log('The user knows how many states I lived in.');
 
 //question 7 setup
-alert('Let\'s keep with the places I\'ve lived theme. I\'ve lived in 3 countries besides the United States. I can tell one of these countries was in the Eastern Hemisphere, two were in the Southern Hemisphere.  In two of these countries English was not the primary language, and Portugese was the primary language in one of these countries.')
+alert('Let\'s keep with the places I\'ve lived theme. I\'ve lived in 3 countries besides the United States. I can tell one of these countries was in the Eastern Hemisphere, two were in the Southern Hemisphere.  In two of these countries English was not the primary language, and Portugese was the primary language in one of these countries.');
 
 var countries = ['mexico', 'brazil', 'australia'];
 
@@ -138,3 +143,6 @@ console.Log('The user knows how he did on the quizzes.');
 
 userName();
 northPoleQuestion();
+questionNotCold();
+questionFly();
+questionTransporter();
