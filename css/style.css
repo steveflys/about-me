@@ -1,12 +1,19 @@
 h1 {
-    color: rgb(20, 6, 6);
+    color: rgb(250, 10, 10);
     margin: 30px;
-    text-align: center;    
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
 }
 
 p {
     color: black;
-    margin: 20px;
+    margin: 5px;
+}
+
+section {
+  margin: 25px;
+  border: 1px solid red;
 }
 
 body {
@@ -15,21 +22,28 @@ body {
     margin: 5px;
 }
 
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 200%;
-}
-
 h2 {
+    text-align: center;
+    margin: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 100%;
+    font-size: 125%;
+    color: rgb(196, 24, 24);
 }
 
 ol {
-    list-style-type: decimal;   
+    list-style: decimal;
+    margin-left: 10%;
+    color: rgba(17, 128, 41, 0.609);
+}
+
+ul {
+    list-style: square;
+    border: 1px solid blue;
+    margin-left: 5%;
+    width: 50%;
 }
 
 img.large {
     width: 1300px;
-    height: 800px;}
-
+    height: 800px;
+  }
