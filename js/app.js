@@ -103,7 +103,7 @@ function questionStatesLivedIn() {
   }
 
   if (counter === 5) {
-    alert('Sorry, you took too many tries.  The correct answer was 11 states.  I also lived in 3 of those states on nmore tha one occasion.');
+    alert('Sorry, you took too many tries.  The correct answer was 11 states.  I also lived in 3 of those states on more tha one occasion.');
   }
   console.log('The user knows how many states I lived in.');
 }
