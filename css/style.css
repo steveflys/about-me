@@ -22,12 +22,11 @@ img.align-center {
 
 img.align-right {
   float: right;
-  margin-right: 150px;
-  margin-top: 35px;
+  margin-right: 2%;
 }
 
 img.medium {
-  width: 1000px;
+  width: 58%;
 }
 p.two {
   color: red;
@@ -38,8 +37,9 @@ p.two {
 }
 
 section {
-  margin: 20px;
+  margin: 40px;
   width: 50%;
+  background-color: rgb(164, 180, 216);
 }
 
 ul {
@@ -47,15 +47,15 @@ ul {
   list-style-position: inside;
   margin: 40px;
   width: 35%;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 ol {
   list-style-type: decimal;
   list-style-position: inside;
-  margin-left: 7%;
+  margin-left: 10%;
   color: rgb(24, 20, 20);
-  line-height: 1;
+  line-height: 1.15;
 }
 
 ol.two{
@@ -65,13 +65,18 @@ ol.two{
 }
 
 img.large {
-  width: 1800px;
+  width: 100%;
   }
 
 section.two {
   color: black;
-  width: 35%
-  margin 12px;
-  line-height: 1.5;
   width: 35%;
+  margin: 38px;
+  line-height: 1;
+  padding: 9px;
+}
+
+ul.one {
+  background-color: rgb(174, 170, 216);
+  padding: 7px;
 }
