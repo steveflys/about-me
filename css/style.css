@@ -27,7 +27,7 @@ img.align-right {
 }
 
 img.medium {
-  width: 1000px;
+  width: 40%;
 }
 p.two {
   color: red;
@@ -38,8 +38,9 @@ p.two {
 }
 
 section {
-  margin: 20px;
+  margin: 40px;
   width: 50%;
+  background-color: rgb(164, 180, 216);
 }
 
 ul {
@@ -65,13 +66,18 @@ ol.two{
 }
 
 img.large {
-  width: 1800px;
+  width: 100%;
   }
 
 section.two {
   color: black;
-  width: 35%
-  margin 12px;
-  line-height: 1.5;
   width: 35%;
+  margin: 38px;
+  line-height: 1;
+  padding: 9px;
+}
+
+ul.one {
+  background-color: rgb(0, 119, 255);
+  padding: 7px;
 }
